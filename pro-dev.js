@@ -54,7 +54,7 @@
             }
         }
         
-        return '(function(r){r.PRODUCTION=r.pro'+JSON.stringify(bool)+';r.DEVELOPMENT=r.dev='+JSON.stringify(!bool)+';}(this));';
+        return '(function(r){r.PRODUCTION=r.pro='+JSON.stringify(bool)+';r.DEVELOPMENT=r.dev='+JSON.stringify(!bool)+';}(this));';
     };
     
     return ProDev;
