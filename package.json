@@ -2,8 +2,8 @@
     "name"        : "pro-dev",
     "description" : "Boilerplate builder for hybrid production&#x2F;development servers.",
     "homepage"    : "https://github.com/daxxog/pro-dev",
-    "main"        : "pro-dev.js",
-    "version"     : "0.0.1",
+    "main"        : "./pro-dev.min.js",
+    "version"     : "0.0.3",
     "engines": { "node" : ">=0.7.0" },
     "maintainers": [{
         "name"  : "David Volm",
@@ -14,12 +14,13 @@
         "type" : "git",
         "url"  : "https://github.com/daxxog/pro-dev.git"
     },
-    "dependencies": {
+    "devDependencies": {
         "bitfactory": "*",
         "stoptime": "*",
         "uglify-js": "*"
     },
-    "bin": {
-        "pro-dev" : "./bin/pro-dev"
+    "scripts": {
+        "prepublish": "./prepublish.sh",
+        "postpublish": "./postpublish.sh"
     }
 }
