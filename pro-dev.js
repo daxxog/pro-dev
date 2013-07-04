@@ -21,6 +21,12 @@
   }
 }(this, function() {
     var ProDev = function(hashProduction) {
+        var bool = ProDev.aot(hashProduction);
+        
+        return '(function(r){r.PRODUCTION=r.pro='+JSON.stringify(bool)+';r.DEVELOPMENT=r.dev='+JSON.stringify(!bool)+';}(this));';
+    };
+    
+    ProDev.aot = function(hashProduction) {
         var bool = true;
         
         if(typeof hashProduction == 'boolean') {
@@ -54,7 +60,7 @@
             }
         }
         
-        return '(function(r){r.PRODUCTION=r.pro='+JSON.stringify(bool)+';r.DEVELOPMENT=r.dev='+JSON.stringify(!bool)+';}(this));';
+        return bool;
     };
     
     return ProDev;

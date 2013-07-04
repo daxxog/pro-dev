@@ -3,7 +3,7 @@
     "description" : "Boilerplate builder for hybrid production&#x2F;development servers.",
     "homepage"    : "https://github.com/daxxog/pro-dev",
     "main"        : "./pro-dev.min.js",
-    "version"     : "0.0.4",
+    "version"     : "0.0.5",
     "engines": { "node" : ">=0.7.0" },
     "maintainers": [{
         "name"  : "David Volm",
