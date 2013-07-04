@@ -18,8 +18,5 @@
         "bitfactory": "*",
         "stoptime": "*",
         "uglify-js": "*"
-    },
-    "bin": {
-        "pro-dev" : "./bin/pro-dev"
     }
 }
